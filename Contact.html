@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="icon" href="c:\Users\amine\OneDrive\Bureau\WhatsApp Image 2025-02-04 à 09.08.32_1f977be9.jpg" type="image/x-icon">
+    <style>
+ .background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    z-index: -1;
+}
+
+
+.background::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            background-color: #4CAF50;
+            padding: 10px;
+            text-align: center;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .navbar:hover {
+            transform: scale(1.1);
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .navbar a:hover {
+            transform: rotate(10deg);
+            text-decoration: underline;
+        }
+
+        .content {
+            text-align: center;
+            padding: 50px;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .content:hover {
+            transform: translateY(-20px);
+        }
+        h2 {
+            transition: all cubic-bezier(0.175, 0.885, 0.32, 1.275) ease-in-out;
+        }
+        h1 {
+            transition: all 3s ease-in-out;
+        }
+        h2:hover {
+            transform: scale(1.2);
+        }
+        h1:hover {
+            transform: scale(1.2);
+        }
+
+        p {
+            transition: all 1s ease-in-out;
+        }
+
+        p:hover {
+            transform: skew(10deg, 0deg);
+        }
+        .content-box {
+    background: rgba(255, 255, 255, 0.9); 
+    border: 2px solid white; 
+    border-radius: 15px;
+    padding: 30px; 
+    max-width: 800px; 
+    margin: 50px auto; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+}
+
+    </style>
+</head>
+<body>
+    <img src="c:\Users\amine\OneDrive\Bureau\téléchargement (4).jpg" alt="Background" class="background">
+    <div class="navbar">
+        <a href="acceuil.html">Accueil</a>
+        <a href="contact.html">Contact</a>
+        <a href="menu.html">Menu</a>
+        <a href="localisations.html">Localisations</a>
+        <a href="INSCRIPTION.html">Inscription</a>
+    </div>
+    <div class="content-box">
+    <div class="content">
+        <h1>Contactez-nous</h1>
+        <p>Pour toute question ou réservation, contactez-nous au numéro suivant : <strong>+212 123 456 789</strong>.</p>
+        <p>Ou envoyez-nous un email à : <strong>contact@restaurant.com</strong></p>
+        <h2>Informations de contact</h2>
+        <p>Adresse : 123, rue de la Liberté, Casablanca, Maroc</p>
+        <p>Téléphone : +212 123 456 789</p>
+        <p>Fax : +212 123 456 780</p>
+        <p>Email : <a href="mailto:contact@restaurant.com">contact@restaurant.com</a></p>
+        <h2>Heures d'ouverture</h2>
+        <p>Lundi au jeudi : 12h00 - 22h00</p>
+        <p>Vendredi au samedi : 12h00 - 23h00</p>
+        <p>Dimanche : 12h00 - 21h00</p>
+        <h2>Réseaux sociaux</h2>
+        <p>Suivez-nous sur les réseaux sociaux pour rester à jour sur nos actualités et promotions !</p>
+        <ul>
+            <li><a href="https://www.facebook.com/restauranthealthy">Facebook</a></li>
+            <li><a href="https://www.instagram.com/restauranthealthy">Instagram</a></li>
+            <li><a href="https://www.twitter.com/restauranthealthy">Twitter</a></li>
+        </ul>
+    </div>  
+    </div>
+</body>
+</html>

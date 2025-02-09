@@ -1,0 +1,250 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription</title>
+    <link rel="icon" href="c:\Users\amine\OneDrive\Bureau\WhatsApp Image 2025-02-04 à 09.08.32_1f977be9.jpg" type="image/x-icon">
+    <style>
+         .background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    z-index: -1;
+}
+
+
+.background::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+.navbar {
+            background-color: #4CAF50;
+            padding: 10px;
+            text-align: center;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .navbar:hover {
+            transform: scale(1.1);
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .navbar a:hover {
+            transform: rotate(10deg);
+            text-decoration: underline;
+        }
+        .bg-verde {
+            background-color: #8BC34A;
+        }
+
+        .btn-verde {
+            background-color: #3E8E41;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .btn-verde:hover {
+            background-color: #2E6D31;
+        }
+
+        .card {
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        .form-control {
+            border: none;
+            border-radius: 10px;
+            padding: 10px;
+            font-size: 16px;
+            transition: border-color 0.3s ease-in-out;
+        }
+
+        .form-control:focus {
+            border-color: #3E8E41;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .animated {
+            animation-duration: 1s;
+            animation-fill-mode: both;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInLeft {
+            0% {
+                opacity: 0;
+                transform: translateX(-100%);
+            }
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes fadeInRight {
+            0% {
+                opacity: 0;
+                transform: translateX(100%);
+            }
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(100%);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInDown {
+            0% {
+                opacity: 0;
+                transform: translateY(-100%);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .tableau {
+            border-collapse: collapse;
+            width: 100%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .tableau th, .tableau td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+        .tableau th {
+            background-color: #f0f0f0;
+        }
+        .tableau tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        .tableau tr:hover {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+   <body>
+    <img src="c:\Users\amine\OneDrive\Bureau\téléchargement (4).jpg" alt="Background" class="background">
+    <div class="navbar">
+        <a href="acceuil.html">Accueil</a>
+        <a href="contact.html">Contact</a>
+        <a href="menu.html">Menu</a>
+        <a href="localisations.html">Localisations</a>
+        <a href="INSCRIPTION.html">Inscription</a>
+    </div>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card bg-verde animated fadeIn">
+                    <div class="card-body">
+                        <h2 class="text-center">Inscription</h2>
+                        <form>
+                            <table class="tableau">
+                                <tr>
+                                    <th>Informations personnelles</th>
+                                    <td>
+                                        <input type="text" class="form-control" id="nom" placeholder="Nom">
+                                        <input type="text" class="form-control" id="prenom" placeholder="Prénom">
+                                        <input type="date" class="form-control" id="date_naissance" placeholder="Date de naissance">
+                                        <input type="text" class="form-control" id="sexe" placeholder="Sexe">
+                                        <input type="text" class="form-control" id="nationalite" placeholder="Nationalité">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Coordonnées</th>
+                                    <td>
+                                        <input type="email" class="form-control" id="email" placeholder="Adresse e-mail">
+                                        <input type="tel" class="form-control" id="telephone" placeholder="Téléphone">
+                                        <input type="text" class="form-control" id="adresse" placeholder="Adresse">
+                                        <input type="text" class="form-control" id="ville" placeholder="Ville">
+                                        <input type="text" class="form-control" id="pays" placeholder="Pays">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Informations de connexion</th>
+                                    <td>
+                                        <input type="password" class="form-control" id="mdp" placeholder="Mot de passe">
+                                        <input type="password" class="form-control" id="mdp_confirmation" placeholder="Confirmer le mot de passe">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Ville</th>
+                                    <td>
+                                        <input list="ville" class="form-control">
+                                        <datalist id="ville">
+                                            <option value="Casablanca">
+                                            <option value="Marrakech">
+                                            <option value="Rabat">
+                                            <option value="fes">
+                                            <option value="Agadir">
+                                        </datalist>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>plats préferes</th>
+                                    <td>
+                                        <input list="plats préferes" class="form-control">
+                                        <datalist id="plats préferes">
+                                            <option value="Healthy">
+                                            <option value="non Non-Healthy">
+                                           
+                                        </datalist>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        <button type="submit" class="btn btn-verde animated fadeInDown">S'inscrire</button>
+                                    </td>
+                                </tr>
+                            </table>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div
+        </body>
+</html>

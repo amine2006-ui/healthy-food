@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Healthy</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="c:\Users\amine\OneDrive\Bureau\WhatsApp Image 2025-02-04 à 09.08.32_1f977be9.jpg" type="image/x-icon">
+    <style>
+          .background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    z-index: -1;
+}
+
+
+.background::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .navbar {
+            background-color: #4CAF50;
+            padding: 15px;
+            text-align: center;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .navbar:hover {
+            transform: scale(0.08_228d5de8);
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 16px;
+            font-weight: bold;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .navbar a:hover {
+            transform: rotate(10deg);
+            text-decoration: underline;
+        }
+
+        .intro-section {
+            padding: 50px 20px;
+            text-align: center;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .intro-section:hover {
+            transform: translateY(-20px);
+        }
+
+        .intro-section h2 {
+            color: #4CAF50;
+            margin-bottom: 20px;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .intro-section h2:hover {
+            transform: scale(1.1);
+        }
+
+        .menu-section, .services-section {
+            padding: 50px 20px;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .menu-section:hover, .services-section:hover {
+            transform: scale(1.1);
+        }
+
+        .menu-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 20px 0;
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease-in-out;
+        }
+
+        .menu-item:hover {
+            transform: scale(1.1);
+        }
+
+        .menu-item img {
+            width: 100px;
+            height: 80px;
+            border-radius: 4px;
+        }
+
+        .footer {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 40px;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .footer:hover {
+            transform: scale(1.1);
+        }
+        .amine {
+    background: rgba(255, 255, 255, 0.9); 
+    border: 2px solid white; 
+    border-radius: 15px;
+    padding: 30px; 
+    max-width: 800px; 
+    margin: 50px auto; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+        /* Animations */
+        @keyframes exemple {
+            from {
+                background-color: red;
+            }
+            to {
+                background-color: yellow;
+            }
+        }
+
+        .menu-item {
+            animation-name: exemple;
+            animation-duration: 4s;
+        }
+
+        @keyframes exemple2 {
+            0% {
+                background-color: red;
+            }
+            25% {
+                background-color: yellow;
+            }
+            50% {
+                background-color: rgb(253, 207, 108);
+            }
+            100% {
+                background-color: green;
+            }
+        }
+
+        .services-section {
+            animation-name: exemple2;
+            animation-duration: 4s;
+        }
+ .services-section {
+    background: rgba(255, 255, 255, 0.9); 
+    border: 2px solid white; 
+    border-radius: 15px;
+    padding: 30px; 
+    max-width: 800px; 
+    margin: 50px auto; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 1.1);
+        @keyframes exemple3 {
+            0% {
+                background-color: red;
+                left: 0px;
+                top: 0px;
+            }
+            25% {
+                background-color: yellow;
+                left: 200px;
+                top: 0px;
+            }
+            50% {
+                background-color: rgb(250, 198, 139);
+                left: 200px;
+                top: 200px;
+            }
+            75% {
+                background-color: green;
+                left: 0px;
+                top: 200px;
+            }
+            100% {
+                background-color: red;
+                left: 0px;
+                top: 0px;
+            }
+        }
+
+        .footer {
+            position: relative;
+            animation-name: exemple3;
+            animation-duration: 4s;
+        }
+    </style>
+</head>
+<body>
+    
+    <img src="c:\Users\amine\OneDrive\Bureau\téléchargement (4).jpg" alt="Background" class="background">
+<div class="navbar">
+    <a href="acceuil.html">Accueil</a>
+    <a href="contact.html">Contact</a>
+    <a href="menu.html">Menu</a>
+    <a href="localisations.html">Localisations</a> 
+    <a href="INSCRIPTION.html">Inscription</a>
+</div>
+<div class="amine">
+<div class="intro-section">
+    <h2>Bienvenue chez Restaurant Healthy</h2>
+    <p>Notre mission est de vous offrir une cuisine saine et savoureuse. Nous croyons en des repas équilibrés, riches en nutriments, et préparés avec des ingrédients frais et biologiques.</p>
+    <p>Découvrez notre menu et visitez nos restaurants situés à travers le Maroc.</p>
+</div>
+
+<div class="menu-section">
+    <h3>Notre Menu</h3>
+    <div class="menu-item">
+        <img src="c:\Users\amine\OneDrive\Bureau\WhatsApp Image 2025-02-04 à 09.08.32_1f977be9.jpg">
+        <span>Salade avec Avocat</span> 45DH
+    </div>
+    <div class="menu-item">
+        <img src="c:\Users\amine\OneDrive\Bureau\WhatsApp Image 2025-02-04 à 09.08.31_8eb02e78.jpg">
+        <span>Poulet Grillé</span> 65DH
+    </div>
+    <div class="menu-item">
+        <img src="c:\Users\amine\OneDrive\Bureau\WhatsApp Image 2025-02-04 à 09.08.31_7adb4424.jpg">
+        <span>Smoothie Vert</span> 25DH
+    </div>
+</div>
+
+<div class="services-section">
+    <h3>Nos Services</h3>
+    <p>Chez Restaurant Healthy, nous vous offrons plus qu'un simple repas. Voici ce que nous proposons :</p>
+    <ul>
+        <li>Des plats sains préparés avec des ingrédients frais et biologiques.</li>
+        <li>Des options végétariennes et végétaliennes adaptées à tous les régimes alimentaires.</li>
+        <li>Un service rapide et de qualité pour que vous puissiez savourer vos repas sans attendre.</li>
+        <li>Des espaces conviviaux et modernes pour une expérience agréable en famille ou entre amis.</li>
+    </ul>
+</div>
+
+<div class="footer">
+    <p>&copy; 2024 Restaurant Healthy. Tous droits réservés.</p>
+</div>
+</div>
+</body>
+</html>
+   

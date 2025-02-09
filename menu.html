@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Restaurant Healthy</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        .background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    z-index: -1;
+}
+
+
+.background::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .navbar {
+            background: linear-gradient(45deg, #4CAF50, #388E3C);
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+            font-weight: bold;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .navbar a:hover {
+            color: #ffeb3b;
+        }
+
+        .menu-container {
+            padding: 50px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .menu-category {
+            background: white;
+            padding: 25px;
+            margin-bottom: 30px;
+            border-radius: 12px;
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+            text-align: center;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .menu-category:hover {
+            transform: scale(1.05);
+        }
+
+        .menu-category h3 {
+            color: #4CAF50;
+            margin-bottom: 20px;
+        }
+
+        .menu-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+            border: 1px solid #ddd;
+            margin: 10px 0;
+            border-radius: 8px;
+            background: linear-gradient(135deg, #e8f5e9, #c8e6c9);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .menu-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .menu-item img {
+            width: 120px;
+            height: 80px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .footer {
+            background: #388E3C;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            font-size: 14px;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .menu-category, .menu-item {
+            animation: fadeIn 1s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <img src="c:\Users\amine\OneDrive\Bureau\téléchargement (4).jpg" alt="Background" class="background">
+    <div class="navbar">
+        <a href="acceuil.html">Accueil</a>
+        <a href="contact.html">Contact</a>
+        <a href="menu.html">Menu</a>
+        <a href="localisations.html">Localisations</a>
+        <a href="INSCRIPTION.html">Inscription</a>
+    </div>
+    <div class="menu-container">
+        <div class="menu-category">
+            <h3>Menu Healthy</h3>
+            <div class="menu-item">
+                <img src="c:\Users\amine\OneDrive\Bureau\WhatsApp Image 2025-02-04 à 09.08.32_1f977be9.jpg">
+                <span>Salade avec Avocat</span> - Salade fraîche avec avocat bio, 45DH
+            </div>
+            <div class="menu-item">
+                <img src="c:\Users\amine\OneDrive\Bureau\WhatsApp Image 2025-02-04 à 09.08.31_8eb02e78.jpg">
+                <span>Poulet Grillé</span> - Servi avec quinoa et légumes, 65DH
+            </div>
+            <div class="menu-item">
+                <img src="c:\Users\amine\OneDrive\Bureau\WhatsApp Image 2025-02-04 à 09.08.31_7adb4424.jpg">
+                <span>Smoothie Vert</span> - Mélange d'épinards, pomme et banane, 25DH
+            </div>
+            <div class="menu-item">
+                <img src="c:\Users\amine\OneDrive\Bureau\téléchargement.jpg">
+                <span>Soupe Detox</span> - Soupe aux légumes verts et curcuma, 30DH
+            </div>
+        </div>
+        <div class="menu-category">
+            <h3>Menu Non-Healthy</h3>
+            <div class="menu-item">
+                <img src="c:\Users\amine\OneDrive\Bureau\WhatsApp Image 2025-02-04 à 09.40.05_b9c91e3f.jpg">
+                <span>Cheeseburger</span> - Burger avec viande de boeuf, fromage, et frites, 60DH
+            </div>
+            <div class="menu-item">
+                <img src="c:\Users\amine\OneDrive\Bureau\WhatsApp Image 2025-02-04 à 09.40.04_bd988c1a.jpg">
+                <span>Ailes de Poulet Frites</span> - Ailes croustillantes avec sauce, 35DH
+            </div>
+            <div class="menu-item">
+                <img src="c:\Users\amine\OneDrive\Bureau\WhatsApp Image 2025-02-04 à 09.40.03_0433ddef.jpg">
+                <span>Soda</span> - Boisson gazeuse, 10DH
+            </div>
+            <div class="menu-item">
+                <img src="c:\Users\amine\OneDrive\Bureau\téléchargement (1).jpg">
+                <span>Pizza Pepperoni</span> - Pizza avec sauce tomate, mozzarella et pepperoni, 75DH
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>&copy; 2024 Healthy & Non-Healthy Restaurant. Tous droits réservés.</p>
+    </div>
+</body>
+</html>

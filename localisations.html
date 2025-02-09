@@ -1,0 +1,200 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Localisations - Restaurant Healthy</title>
+    <link rel="icon" href="c:\Users\amine\OneDrive\Bureau\WhatsApp Image 2025-02-04 à 09.08.32_1f977be9.jpg" type="image/x-icon">
+    <style>
+         .background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    z-index: -1;
+}
+
+
+.background::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        .navbar {
+            background-color: #4CAF50;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+
+        .locations-section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .locations-section h2 {
+            color: #4CAF50;
+            margin-bottom: 20px;
+        }
+
+        .location-item {
+            background-color: white;
+            padding: 20px;
+            margin: 10px 0;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+            width: 30%;
+            margin-right: 15px;
+            text-align: left;
+        }
+
+        .location-item h3 {
+            color: #4CAF50;
+            cursor: pointer;
+        }
+
+        .location-item img {
+            width: 100%;
+            height: 150px;
+            border-radius: 4px;
+            
+        }
+
+        .location-item p {
+            display: none;
+        }
+
+        .footer {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 40px;
+        }
+
+        .animated {
+            transition: all 0.3s ease-in-out;
+        }
+
+        .animated:hover {
+            transform: scale(1.1);
+        }
+
+        .fadeIn {
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        .fadeInUp {
+            animation: fadeInUp 1s ease-in-out;
+        }
+
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(100%);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .body-box {
+    background: rgba(255, 255, 255, 0.9); 
+    border: 2px solid white; 
+    border-radius: 15px;
+    padding: 30px; 
+    max-width: 800px; 
+    margin: 50px auto; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+}
+.locations-section {
+
+    background: rgba(255, 255, 255, 0.9); 
+    border: 2px solid white; 
+    border-radius: 15px;
+    padding: 30px; 
+    max-width: 800px; 
+    margin: 50px auto; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+}
+    </style>
+</head>
+<body>
+    <img src="c:\Users\amine\OneDrive\Bureau\téléchargement (4).jpg" alt="Background" class="background">
+    <div class="navbar">
+        <a href="acceuil.html">Accueil</a>
+        <a href="contact.html">Contact</a>
+        <a href="menu.html">Menu</a>
+        <a href="localisations.html">Localisations</a>
+        <a href="INSCRIPTION.html">Inscription</a>
+    </div>
+    <div class="locations-section">
+        <h2>Nos Restaurants au Maroc</h2>
+        <p>Nous sommes présents dans plusieurs villes du Maroc. Voici quelques-unes de nos localisations :</p>
+        <div class="location-item">
+            <h3 class="animated" >Casablanca</h3>
+            <img src="c:\Users\amine\OneDrive\Bureau\WhatsApp Image 2025-02-04 à 10.17.54_092aa9e8.jpg" alt="Casablanca">
+            <p>Notre restaurant à Casablanca est situé au cœur de la ville, offrant un cadre moderne et convivial pour savourer des repas sains.</p>
+        </div>
+        <div class="location-item">
+            <h3 class="animated" >Marrakech</h3>
+            <img src="c:\Users\amine\OneDrive\Bureau\WhatsApp Image 2025-02-04 à 10.18.08_228d5de8.jpg" alt="Marrakech">
+            <p>Venez découvrir notre restaurant à Marrakech, avec une belle vue sur les montagnes et une ambiance chaleureuse.</p>
+        </div>
+        <div class="location-item">
+            <h3 class="animated">Rabat</h3>
+            <img src="c:\Users\amine\OneDrive\Bureau\WhatsApp Image 2025-02-04 à 10.18.24_ed81fd1e.jpg" alt="Rabat">
+            <p>Nous vous accueillons à Rabat avec des plats sains et délicieux dans un cadre calme et raffiné.</p>
+        </div>
+        <div class="location-item">
+            <h3 class="animated" >Fès</h3>
+            <img src="c:\Users\amine\OneDrive\Bureau\WhatsApp Image 2025-02-04 à 10.18.34_e0daec42.jpg" alt="Fès">
+            <p>Notre restaurant à Fès vous propose des repas équilibrés tout en vous permettant de découvrir la culture locale.</p>
+        </div>
+        <div class="location-item">
+            <h3 class="animated" >Agadir</h3>
+            <img src="c:\Users\amine\OneDrive\Bureau\WhatsApp Image 2025-02-04 à 10.18.48_e5a64817.jpg" alt="Agadir">
+            <p>Le restaurant à Agadir est l'endroit idéal pour déguster des plats sains tout en profitant de la brise marine.</p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
+
